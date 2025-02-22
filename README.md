@@ -6,11 +6,9 @@ with [opam](https://opam.ocaml.org/).
 ## Quick Start
 
 ```shell
-npm run init
+bun run init
 
-# In separate terminals:
-npm run watch
-npm run serve
+nix run
 ```
 
 ### React
