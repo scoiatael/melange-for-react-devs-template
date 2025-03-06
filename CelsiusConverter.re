@@ -15,11 +15,13 @@ let make = () => {
       onChange={evt => {
         let newCelsius = React.Event.Form.target(evt)##value;
         setCelsius(_ => newCelsius);
-        switch (newCelsius |> convertStr) {
+        switch (convertStr(newCelsius)) {
         | exception _ =>
           setError(_ => "couldn't convert");
           setFahrenheit(_ => "?");
-        | value => setFahrenheit(_ => value)
+        | value =>
+          setFahrenheit(_ => value);
+          setError(_ => "");
         };
       }}
     />
