@@ -16,8 +16,8 @@ let make = () => {
         let newCelsius = React.Event.Form.target(evt)##value;
         setCelsius(_ => newCelsius);
         switch (convertStr(newCelsius)) {
-        | exception _ =>
-          setError(_ => "couldn't convert");
+        | exception exc =>
+          setError(_ => "couldn't convert: " ++ Printexc.to_string(exc));
           setFahrenheit(_ => "?");
         | value =>
           setFahrenheit(_ => value);
