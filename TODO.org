@@ -1,0 +1,6 @@
+#+title: TODO
+* Integrate fastify
+https://tech.ahrefs.com/building-react-server-components-in-ocaml-81c276713f19
+* Add HTML rendering from Fastify
+https://blog.platformatic.dev/building-a-micro-htmx-ssr-framework#heading-adding-jsx-support-via-kitajshtmlhttpsgithubcomkitajshtml
+https://github.com/kitajs/html/tree/master/packages/fastify-html-plugin#readme
